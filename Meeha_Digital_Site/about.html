@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Meeha_Digital_Marketing</title>
+  <link rel="icon" href="images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <style>
+    :root{
+  --bg-start:#0b0f25;
+  --bg-end:#3b0b6f;
+  --accent1:#8b5cf6;
+  --accent2:#ff6aa3;
+  --muted:#bfc6e6;
+  --text:#e6e9ff;
+  --card: rgba(255,255,255,0.04);
+  --glass: rgba(255,255,255,0.04);
+  --radius:12px;
+  --maxwidth:1150px;
+  --shadow: 0 10px 30px rgba(2,6,23,0.6);
+  font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background: linear-gradient(135deg,var(--bg-start), var(--bg-end));
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.6;
+  font-size:16px;
+}
+
+/* layout */
+.container{max-width:var(--maxwidth);margin:0 auto;padding:28px}
+.center{text-align:center}
+.small{font-size:0.95rem}
+.muted{color:var(--muted)}
+.lead{font-size:1.05rem;color:rgba(230,233,255,0.95);}
+
+/* header */
+.site-header{
+  position:sticky;top:0;z-index:90;
+  background:linear-gradient(180deg, rgba(0,0,0,0.18), rgba(0,0,0,0.06));
+  border-bottom:1px solid rgba(255,255,255,0.03);
+}
+.nav-container{display:flex;align-items:center;gap:16px;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--text)}
+.brand-logo{height:44px;width:44px;border-radius:8px;object-fit:cover}
+.brand-name{font-weight:700;font-size:1.05rem}
+
+/* nav */
+.main-nav ul{display:flex;gap:14px;list-style:none;margin:0;padding:0}
+.main-nav a{color:var(--muted);text-decoration:none;padding:8px 12px;border-radius:8px;display:inline-block}
+.main-nav a:hover, .main-nav a.active{color:var(--text);background:rgba(255,255,255,0.03)}
+
+/* actions */
+.nav-actions{display:flex;gap:10px;align-items:center}
+.btn-primary{
+  background:linear-gradient(90deg,var(--accent1),var(--accent2));
+  color:#fff;padding:10px 16px;border-radius:10px;text-decoration:none;border:none;cursor:pointer;font-weight:600;
+  box-shadow: 0 8px 30px rgba(139,92,246,0.14);
+}
+.btn-primary.small{padding:8px 12px;font-size:0.95rem}
+.btn-ghost{background:transparent;color:var(--text);border:1px solid rgba(255,255,255,0.04);padding:8px 12px;border-radius:10px;text-decoration:none}
+
+/* hamburger */
+.hamburger{display:none;background:transparent;border:none;color:var(--muted);font-size:20px;cursor:pointer}
+
+/* hero */
+.hero{padding:72px 0}
+.hero-grid{display:grid;grid-template-columns:1fr 380px;gap:36px;align-items:start}
+.eyebrow{color:var(--muted);font-weight:600}
+.hero-title{font-size:2.4rem;line-height:1.04;margin:8px 0 12px}
+.hero-sub{color:rgba(230,233,255,0.95);margin-bottom:18px}
+.hero-cta{display:flex;gap:12px;align-items:center}
+.hero-right{display:flex;flex-direction:column;gap:14px;align-items:flex-end}
+.glass{background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));padding:16px;border-radius:14px;border:1px solid rgba(255,255,255,0.04);box-shadow:var(--shadow);backdrop-filter:blur(6px)}
+.portrait{width:120px;height:120px;border-radius:12px;object-fit:cover}
+.profile-info h3{margin:0 0 6px}
+.contact-mini a{color:var(--muted);text-decoration:none}
+.contact-mini .copy-btn{margin-left:8px}
+
+/* stats */
+.hero-stats{display:flex;gap:14px;margin-top:18px}
+.stat{background:rgba(255,255,255,0.02);padding:12px;border-radius:10px;text-align:center;min-width:86px}
+.counter{font-size:1.35rem;font-weight:700;color:var(--accent1)}
+
+/* sections */
+.section{padding:48px 0}
+.section-title{font-size:1.6rem;margin:0 0 8px}
+.cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:18px}
+.card{background:var(--card);padding:18px;border-radius:12px}
+.card-icon{font-size:1.5rem;margin-bottom:8px}
+
+/* portfolio */
+.portfolio-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:18px}
+.project-card{border-radius:12px;overflow:hidden;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);cursor:pointer;transition:transform .25s ease}
+.project-card img{width:100%;height:160px;object-fit:cover;display:block}
+.project-card:hover{transform:translateY(-6px)}
+.project-meta{padding:12px}
+
+/* testimonials */
+.testimonials-slider{position:relative;overflow:hidden;padding:18px;background:linear-gradient(180deg, rgba(255,255,255,0.02),transparent);border-radius:12px;margin-top:18px}
+.testimonial{display:none}
+.testimonial.active{display:block}
+.quote{font-size:1rem;margin:0 0 12px}
+.author{font-weight:700;color:var(--muted)}
+
+/* footer */
+.site-footer{padding:32px 0;margin-top:36px;border-top:1px solid rgba(255,255,255,0.03)}
+.footer-grid{display:grid;grid-template-columns:1fr 200px 200px;gap:16px;align-items:start}
+.footer-links{list-style:none;padding:0;margin:0}
+
+/* forms */
+input,select,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--text);margin-top:6px}
+label{display:block;margin-bottom:12px;font-weight:600;color:var(--muted)}
+.form-actions{display:flex;gap:12px}
+
+/* modal */
+.modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(3,4,11,0.6);z-index:120;padding:20px}
+.modal[aria-hidden="false"]{display:flex}
+.modal-dialog{background:linear-gradient(180deg,#071026,#0b0820);padding:20px;border-radius:12px;max-width:520px;width:100%;position:relative}
+.modal-close{position:absolute;right:10px;top:8px;background:transparent;border:none;color:var(--muted);font-size:1rem;cursor:pointer}
+
+/* copy button */
+.copy-btn{
+  background:transparent;border:1px solid rgba(255,255,255,0.04);
+  padding:6px 8px;border-radius:8px;color:var(--muted);cursor:pointer;font-size:0.9rem;margin-left:8px;
+}
+
+/* whatsapp float */
+.whatsapp-float{
+  position:fixed;right:18px;bottom:18px;background:linear-gradient(90deg,var(--accent1),var(--accent2));padding:10px 12px;border-radius:999px;color:#fff;display:flex;align-items:center;gap:8px;text-decoration:none;box-shadow:0 10px 30px rgba(11,12,27,0.5);z-index:140;
+}
+
+/* responsive */
+@media (max-width:980px){
+  .hero-grid{grid-template-columns:1fr;gap:20px}
+  .main-nav{display:none}
+  .hamburger{display:block}
+  .nav-container{gap:8px}
+  .footer-grid{grid-template-columns:1fr}
+}
+
+    body {
+        background-color: lightblue;
+    }
+</style>
+  <header class="site-header">
+    <div class="container nav-row">
+      <a class="brand" href="index.html"><img src="images/logo.png" alt="logo" class="brand-logo"><span class="brand-text">Meeha_Digital_Marketing</span></a>
+      <nav class="main-nav">
+        <ul>
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link active" href="about.html">About</a></li>
+          <li><a class="nav-link" href="services.html">Services</a></li>
+          <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions"><button class="btn-primary bookBtn">Book a Call</button><button id="hamburger" class="hamburger"><span></span><span></span><span></span></button></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section about-hero">
+      <div class="container about-grid">
+        <div>
+          <h1>About Maleeha</h1>
+          <p class="lead">Founder of <strong>Meeha_Digital_Marketing</strong>. A strategic, results-driven digital marketer focusing on local growth and measurable campaigns.</p>
+
+          <ul class="bio-list">
+            <li><strong>Experience:</strong> Local & regional campaigns across Pakistan and GCC</li>
+            <li><strong>Specialties:</strong> Local SEO, content strategy, paid ads, branding & training</li>
+            <li><strong>Approach:</strong> Data-first strategies + creative execution</li>
+          </ul>
+
+          <p>She runs hands-on workshops and courses that teach teams how to create content that converts and how to scale ads with measurable ROI.</p>
+
+          <div class="center mt-16">
+            <a href="services.html" class="btn-primary">Work with Meeha</a>
+            <a href="contact.html" class="btn-ghost">Contact</a>
+          </div>
+        </div>
+
+        <aside>
+          <div class="glass about-card">
+            <img src="images/meeha_portrait.jpg" alt="Maleeha" class="about-photo">
+            <h3>Maleeha</h3>
+            <p class="muted">Digital Marketer • Trainer • Growth Partner</p>
+            <div class="badges">
+              <span class="badge">Local SEO</span>
+              <span class="badge">Content</span>
+              <span class="badge">Ads</span>
+            </div>
+            <div class="mt-12">
+              <a class="btn-primary" href="contact.html">Get Audit</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><img src="images/logo.png" class="footer-logo" alt=""><p class="muted">Meeha_Digital_Marketing</p></div>
+      <div><h4>Contact</h4><p class="muted"><a href="mailto:Maleehahameed29@gmail.com">Maleehahameed29@gmail.com</a></p></div>
+      <div><h4>Follow</h4><p class="muted"><a href="https://www.instagram.com/meeha_digital?igsh=MXY5cmQxN2UycW5uMw%3D%3D&utm_source=qr" target="_blank" rel="noopener">Instagram</a></p></div>
+    </div>
+    <div class="container small center muted">© <span class="year"></span> Meeha_Digital_Marketing</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

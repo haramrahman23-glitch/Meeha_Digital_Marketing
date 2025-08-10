@@ -1,0 +1,22 @@
+/* Apply to the whole page */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightblue !important; /* Change this to your desired color */
+    font-family: Arial, sans-serif;
+}
+
+/* Example heading style */
+h1 {
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* Example image style */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 300px;
+    border-radius: 10px;
+}

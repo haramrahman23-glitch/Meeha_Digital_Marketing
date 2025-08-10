@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Meeha_Digital_Marketing — Maleeha</title>
+  <meta name="description" content="Meeha_Digital_Marketing — Local SEO, content marketing, ads, branding & training. Serving Islamabad, Dubai, Riyadh." />
+  <link rel="icon" href="images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Structured data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Meeha_Digital_Marketing",
+    "url": "https://example.com",
+    "email": "Maleehahameed29@gmail.com",
+    "telephone": "+923180923546",
+    "sameAs": [
+      "https://www.instagram.com/meeha_digital?igsh=MXY5cmQxN2UycW5uMw%3D%3D&utm_source=qr",
+      "https://www.facebook.com/share/14Lbqw2AUuU/?mibextid=wwXIfr"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <style>
+    :root{
+  --bg-start:#0b0f25;
+  --bg-end:#3b0b6f;
+  --accent1:#8b5cf6;
+  --accent2:#ff6aa3;
+  --muted:#bfc6e6;
+  --text:#e6e9ff;
+  --card: rgba(255,255,255,0.04);
+  --glass: rgba(255,255,255,0.04);
+  --radius:12px;
+  --maxwidth:1150px;
+  --shadow: 0 10px 30px rgba(2,6,23,0.6);
+  font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background: linear-gradient(135deg,var(--bg-start), var(--bg-end));
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.6;
+  font-size:16px;
+}
+
+/* layout */
+.container{max-width:var(--maxwidth);margin:0 auto;padding:28px}
+.center{text-align:center}
+.small{font-size:0.95rem}
+.muted{color:var(--muted)}
+.lead{font-size:1.05rem;color:rgba(230,233,255,0.95);}
+
+/* header */
+.site-header{
+  position:sticky;top:0;z-index:90;
+  background:linear-gradient(180deg, rgba(0,0,0,0.18), rgba(0,0,0,0.06));
+  border-bottom:1px solid rgba(255,255,255,0.03);
+}
+.nav-container{display:flex;align-items:center;gap:16px;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--text)}
+.brand-logo{height:44px;width:44px;border-radius:8px;object-fit:cover}
+.brand-name{font-weight:700;font-size:1.05rem}
+
+/* nav */
+.main-nav ul{display:flex;gap:14px;list-style:none;margin:0;padding:0}
+.main-nav a{color:var(--muted);text-decoration:none;padding:8px 12px;border-radius:8px;display:inline-block}
+.main-nav a:hover, .main-nav a.active{color:var(--text);background:rgba(255,255,255,0.03)}
+
+/* actions */
+.nav-actions{display:flex;gap:10px;align-items:center}
+.btn-primary{
+  background:linear-gradient(90deg,var(--accent1),var(--accent2));
+  color:#fff;padding:10px 16px;border-radius:10px;text-decoration:none;border:none;cursor:pointer;font-weight:600;
+  box-shadow: 0 8px 30px rgba(139,92,246,0.14);
+}
+.btn-primary.small{padding:8px 12px;font-size:0.95rem}
+.btn-ghost{background:transparent;color:var(--text);border:1px solid rgba(255,255,255,0.04);padding:8px 12px;border-radius:10px;text-decoration:none}
+
+/* hamburger */
+.hamburger{display:none;background:transparent;border:none;color:var(--muted);font-size:20px;cursor:pointer}
+
+/* hero */
+.hero{padding:72px 0}
+.hero-grid{display:grid;grid-template-columns:1fr 380px;gap:36px;align-items:start}
+.eyebrow{color:var(--muted);font-weight:600}
+.hero-title{font-size:2.4rem;line-height:1.04;margin:8px 0 12px}
+.hero-sub{color:rgba(230,233,255,0.95);margin-bottom:18px}
+.hero-cta{display:flex;gap:12px;align-items:center}
+.hero-right{display:flex;flex-direction:column;gap:14px;align-items:flex-end}
+.glass{background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));padding:16px;border-radius:14px;border:1px solid rgba(255,255,255,0.04);box-shadow:var(--shadow);backdrop-filter:blur(6px)}
+.portrait{width:120px;height:120px;border-radius:12px;object-fit:cover}
+.profile-info h3{margin:0 0 6px}
+.contact-mini a{color:var(--muted);text-decoration:none}
+.contact-mini .copy-btn{margin-left:8px}
+
+/* stats */
+.hero-stats{display:flex;gap:14px;margin-top:18px}
+.stat{background:rgba(255,255,255,0.02);padding:12px;border-radius:10px;text-align:center;min-width:86px}
+.counter{font-size:1.35rem;font-weight:700;color:var(--accent1)}
+
+/* sections */
+.section{padding:48px 0}
+.section-title{font-size:1.6rem;margin:0 0 8px}
+.cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:18px}
+.card{background:var(--card);padding:18px;border-radius:12px}
+.card-icon{font-size:1.5rem;margin-bottom:8px}
+
+/* portfolio */
+.portfolio-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:18px}
+.project-card{border-radius:12px;overflow:hidden;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);cursor:pointer;transition:transform .25s ease}
+.project-card img{width:100%;height:160px;object-fit:cover;display:block}
+.project-card:hover{transform:translateY(-6px)}
+.project-meta{padding:12px}
+
+/* testimonials */
+.testimonials-slider{position:relative;overflow:hidden;padding:18px;background:linear-gradient(180deg, rgba(255,255,255,0.02),transparent);border-radius:12px;margin-top:18px}
+.testimonial{display:none}
+.testimonial.active{display:block}
+.quote{font-size:1rem;margin:0 0 12px}
+.author{font-weight:700;color:var(--muted)}
+
+/* footer */
+.site-footer{padding:32px 0;margin-top:36px;border-top:1px solid rgba(255,255,255,0.03)}
+.footer-grid{display:grid;grid-template-columns:1fr 200px 200px;gap:16px;align-items:start}
+.footer-links{list-style:none;padding:0;margin:0}
+
+/* forms */
+input,select,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--text);margin-top:6px}
+label{display:block;margin-bottom:12px;font-weight:600;color:var(--muted)}
+.form-actions{display:flex;gap:12px}
+
+/* modal */
+.modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(3,4,11,0.6);z-index:120;padding:20px}
+.modal[aria-hidden="false"]{display:flex}
+.modal-dialog{background:linear-gradient(180deg,#071026,#0b0820);padding:20px;border-radius:12px;max-width:520px;width:100%;position:relative}
+.modal-close{position:absolute;right:10px;top:8px;background:transparent;border:none;color:var(--muted);font-size:1rem;cursor:pointer}
+
+/* copy button */
+.copy-btn{
+  background:transparent;border:1px solid rgba(255,255,255,0.04);
+  padding:6px 8px;border-radius:8px;color:var(--muted);cursor:pointer;font-size:0.9rem;margin-left:8px;
+}
+
+/* whatsapp float */
+.whatsapp-float{
+  position:fixed;right:18px;bottom:18px;background:linear-gradient(90deg,var(--accent1),var(--accent2));padding:10px 12px;border-radius:999px;color:#fff;display:flex;align-items:center;gap:8px;text-decoration:none;box-shadow:0 10px 30px rgba(11,12,27,0.5);z-index:140;
+}
+
+/* responsive */
+@media (max-width:980px){
+  .hero-grid{grid-template-columns:1fr;gap:20px}
+  .main-nav{display:none}
+  .hamburger{display:block}
+  .nav-container{gap:8px}
+  .footer-grid{grid-template-columns:1fr}
+}
+
+    body {
+        background-color: lightblue;
+    }
+</style>
+
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav-row">
+      <a class="brand" href="index.html">
+        <img src="images/logo.png" alt="Meeha_Digital_Marketing" class="brand-logo">
+        <span class="brand-text">Meeha_Digital_Marketing</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a class="nav-link active" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link" href="services.html">Services</a></li>
+          <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn-primary bookBtn">Book a Call</button>
+        <button id="hamburger" class="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <p class="eyebrow">Meeha_Digital_Marketing — Professional Digital Marketing</p>
+        <h1 class="hero-title">Hi — I’m <span class="accent">Maleeha</span>. I help local & regional brands grow.</h1>
+        <p class="hero-sub">Local SEO, content marketing, targeted ads, branding and hands-on courses for business owners and teams.</p>
+
+        <div class="hero-cta">
+          <a href="services.html" class="btn-primary">View Services</a>
+          <a href="portfolio.html" class="btn-ghost">See Portfolio</a>
+          <a class="btn-ghost" href="mailto:Maleehahameed29@gmail.com">Email</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat"><span class="counter" data-target="8">1+</span>+<div class="stat-label">Years</div></div>
+          <div class="stat"><span class="counter" data-target="120">48+</span>+<div class="stat-label">Projects</div></div>
+          <div class="stat"><span class="counter" data-target="45">32+</span>+<div class="stat-label">Clients</div></div>
+        </div>
+      </div>
+
+      <aside class="hero-right">
+        <div class="profile glass">
+          <img src="images/meeha_portrait.jpg" alt="Maleeha — Meeha_Digital_Marketing" class="profile-photo">
+          <div class="profile-body">
+            <h3>Maleeha</h3>
+            <p class="muted">Founder — Meeha_Digital_Marketing</p>
+            <p class="small">Local SEO • Content Marketing • Ads • Branding • Training</p>
+
+            <div class="contact-mini">
+              <div>
+                <a class="contact-link" href="mailto:Maleehahameed29@gmail.com">Maleehahameed29@gmail.com</a>
+                <button class="copy-btn" data-copy="Maleehahameed29@gmail.com" aria-label="Copy email">Copy</button>
+              </div>
+              <div>
+                <a class="contact-link" href="tel:+923180923546">+92 318 0923546</a>
+                <button class="copy-btn" data-copy="+923180923546" aria-label="Copy phone">Copy</button>
+              </div>
+              <div class="socials-inline">
+                <a target="_blank" rel="noopener" href="https://www.instagram.com/meeha_digital?igsh=MXY5cmQxN2UycW5uMw%3D%3D&utm_source=qr" aria-label="Instagram">IG</a>
+                <a target="_blank" rel="noopener" href="https://www.facebook.com/share/14Lbqw2AUuU/?mibextid=wwXIfr" aria-label="Facebook">FB</a>
+              </div>
+            </div>
+
+            <div class="profile-buttons">
+              <a href="contact.html" class="btn-primary small">Work Together</a>
+              <button class="btn-ghost bookBtn small">Book a Call</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="typing glass">
+          <div class="typing-line">I help brands get noticed in <span id="typing"></span></div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- SERVICES PREVIEW -->
+  <section class="section services-preview">
+    <div class="container">
+      <h2 class="section-title">Services</h2>
+      <p class="muted">Local & regional marketing with measurable results.</p>
+
+      <div class="cards-grid">
+        <article class="card">
+          <div class="card-icon">🔍</div>
+          <h3>Local SEO</h3>
+          <p>Optimize Google Business Profile, local keywords & citations (Islamabad-focused campaigns).</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">✍️</div>
+          <h3>Content Marketing</h3>
+          <p>Content strategy, creation and distribution to attract high-quality leads.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">📣</div>
+          <h3>Paid Ads</h3>
+          <p>Facebook & Google campaigns targeted by city/region (Dubai, Riyadh, Islamabad).</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">🎓</div>
+          <h3>Courses & Training</h3>
+          <p>Practical workshops & step-by-step courses for entrepreneurs and teams.</p>
+        </article>
+      </div>
+
+      <div class="center mt-24">
+        <a href="services.html" class="btn-primary">All Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO PREVIEW -->
+  <section class="section portfolio-preview">
+    <div class="container">
+      <h2 class="section-title">Recent Work</h2>
+      <p class="muted">Selected case studies with measurable results.</p>
+
+      <div class="portfolio-grid" id="portfolioGrid">
+        <article class="project-card" data-type="seo">
+          <a href="case-study.html?project=portfolio1">
+            <img src="images/portfolio1.jpg" alt="Project 1">
+            <div class="project-meta"><h4>Local SEO — Clinic</h4><p>+120% organic visits</p></div>
+          </a>
+        </article>
+
+        <article class="project-card" data-type="ads">
+          <a href="case-study.html?project=portfolio2">
+            <img src="images/portfolio2.jpg" alt="Project 2">
+            <div class="project-meta"><h4>Geo Ads — Retail</h4><p>3x ROAS</p></div>
+          </a>
+        </article>
+
+        <article class="project-card" data-type="content">
+          <a href="case-study.html?project=portfolio3">
+            <img src="images/portfolio3.jpg" alt="Project 3">
+            <div class="project-meta"><h4>Content Strategy — SaaS</h4><p>Lead gen +45%</p></div>
+          </a>
+        </article>
+
+        <article class="project-card" data-type="branding">
+          <a href="case-study.html?project=portfolio4">
+            <img src="images/portfolio4.jpg" alt="Project 4">
+            <div class="project-meta"><h4>Branding — Local Business</h4><p>New identity & messaging</p></div>
+          </a>
+        </article>
+
+      </div>
+
+      <div class="center mt-24">
+        <a href="portfolio.html" class="btn-ghost">See Full Portfolio</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section testimonials">
+    <div class="container">
+      <h2 class="section-title">What clients say</h2>
+      <div class="testimonials-slider" id="testimonials">
+        <div class="testimonial active">
+          <p class="quote">“Meeha helped our clinic show up in local search — bookings rose fast.”</p>
+          <div class="author">— Ahmed, Islamabad</div>
+        </div>
+        <div class="testimonial">
+          <p class="quote">“Practical training and real templates — we implemented the same week.”</p>
+          <div class="author">— Fatima, Dubai</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="images/logo.png" alt="Meeha logo" class="footer-logo">
+        <p class="muted">Meeha_Digital_Marketing — Local & regional digital marketing.</p>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <p class="muted">
+          <a href="mailto:Maleehahameed29@gmail.com">Maleehahameed29@gmail.com</a>
+          <button class="copy-btn" data-copy="Maleehahameed29@gmail.com" aria-label="Copy email">Copy</button>
+          <br>
+          <a href="tel:+923180923546">+92 318 0923546</a>
+          <button class="copy-btn" data-copy="+923180923546" aria-label="Copy phone">Copy</button>
+        </p>
+      </div>
+
+      <div>
+        <h4>Follow</h4>
+        <div class="socials">
+          <a target="_blank" rel="noopener" href="https://www.instagram.com/meeha_digital?igsh=MXY5cmQxN2UycW5uMw%3D%3D&utm_source=qr">Instagram</a>
+          <a target="_blank" rel="noopener" href="https://www.facebook.com/share/14Lbqw2AUuU/?mibextid=wwXIfr">Facebook</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container small center muted">© <span class="year"></span> Meeha_Digital_Marketing</div>
+  </footer>
+
+  <!-- BOOKING MODAL -->
+  <div class="modal" id="bookModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+      <h3>Book a Call with Maleeha</h3>
+      <p class="muted">Choose a time and share a short brief — we’ll reply to schedule.</p>
+
+      <form id="bookForm">
+        <label>Name<input type="text" name="name" required></label>
+        <label>Email<input type="email" name="email" required></label>
+        <label>City<input type="text" name="city" placeholder="e.g. Islamabad"></label>
+        <label>Message<textarea name="message" rows="3" placeholder="Project / budget / timeline"></textarea></label>
+
+        <div class="modal-actions">
+          <button type="submit" class="btn-primary">Request Call</button>
+          <button type="button" class="btn-ghost" id="modalCancel">Cancel</button>
+        </div>
+        <p class="muted small">This opens your email client (mailto). To capture leads, I can wire a backend later.</p>
+      </form>
+    </div>
+  </div>
+
+  <!-- WHATSAPP FLOAT -->
+  <a class="whatsapp-float" href="https://wa.me/923180923546" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <span>💬</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
